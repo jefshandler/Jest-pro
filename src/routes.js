@@ -1,4 +1,7 @@
 const routes = require("express").Router();
+// importar o session clontroler
+const SessionController = require("./app/controllers/SessionController");
+
 // const { User } =require("./app/models");
 //
 // User.create({
@@ -6,8 +9,10 @@ const routes = require("express").Router();
 //     email: "noah1@b.com",
 //     password_hash: "123654789"
 // });
-
 //definir rotas
-
+// routes.post("/sessions", (req, res) => {
+    //colocar a rota de autenticação
+// })
+routes.post("/sessions", SessionController.store);
 
 module.exports = routes;
