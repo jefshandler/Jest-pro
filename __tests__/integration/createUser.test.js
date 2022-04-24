@@ -3,10 +3,10 @@ describe("Criar usuário", () => {
     it("Criar", async  () => {
         const user = await User.create({
             name: "TesteqaCreate",
-            email: "bbb@nn.com",
+            email: "bbbb@nn.com",
             password_hash: "123123123"
         });
         console.log(user);
-        expect(user.email).toBe("bbb@nn.com");
+        expect(user.email).toBe("bbbb@nn.com");
     });
 });
